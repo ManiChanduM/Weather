@@ -39,7 +39,7 @@ function updateViewContent(cityName, weatherData) {
   weatherTemperature.textContent = (weatherData.main.temp).toFixed() + '℃';
   weatherCity.textContent = cityName == 'Vishakhapatnam' ? 'Visakhapatnam' : cityName;
   weatherDescription.textContent = weatherData.weather[0].description;
-  weatherImage.src = 'http://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '.png';
+  weatherImage.src = 'https://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '.png';
   removeLoader();
 }
 
