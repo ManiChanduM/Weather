@@ -1,0 +1,86 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.title {
+  color: #1976D2;
+}
+
+.temperature-wrapper {
+  background-color: #e0e0e0;
+}
+
+div.temperature-wrapper>div.d-flex.align-items-center.justify-content-center.bd-highlight {
+  height: 126px;
+}
+
+#loader,
+#weatherCard {
+  display: none !important;
+}
+
+#weatherCard {
+  max-width: 540px;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animateBottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animateBottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animateBottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animateBottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}

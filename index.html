@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Check weather for metropolitan cities in india">
+  <meta name="theme-color" content="#1976D2">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <title>Weather</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="row">
+      <div class="col-md-6 offset-md-3 col-sm-10 offset-sm-1">
+
+        <!-- Title -->
+        <h1 class="font-weight-light text-center pt-4 title">Weather</h1>
+
+        <!-- Select a city -->
+        <div class="pt-4">
+          <select class="form-control" id="cityFormControl" aria-label="Select" onchange="onCityChange()">
+            <option value="">Select a city</option>
+            <option>Bangalore</option>
+            <option>Chennai</option>
+            <option>Delhi</option>
+            <option>Hyderabad</option>
+            <option>Kanpur</option>
+            <option>Kolkata</option>
+            <option>Mumbai</option>
+            <option>Nagpur</option>
+            <option>Pune</option>
+            <option value="Vishakhapatnam">Visakhapatnam</option>
+          </select>
+        </div>
+
+        <!-- Loader -->
+        <div class="mt-5 d-flex align-items-center justify-content-center" id="loader">
+          <div class="loader"></div>
+        </div>
+
+        <!-- Card -->
+        <div class="card mb-3 mt-4 animate-bottom" id="weatherCard">
+          <div class="row no-gutters">
+            <div class="col-md-4 temperature-wrapper">
+              <div class="d-flex align-items-center justify-content-center bd-highlight">
+                <div class="p-2 bd-highlight">
+                  <h2 id="weatherTemperature"></h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title" id="weatherCity"></h5>
+                <p class="card-text" id="weatherDescription"><img id="weatherImage"
+                    src="http://openweathermap.org/img/wn/10d.png" alt="icon">
+                  <small class="text-muted"></small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Optional JavaScript -->.
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
